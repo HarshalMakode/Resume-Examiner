@@ -5,14 +5,14 @@ import io
 from dotenv import load_dotenv
 from openai import OpenAI
 
-##load_dotenv()
+load_dotenv()
 
 st.set_page_config(page_title="AI Resume Examiner", page_icon="📄", layout="centered")
 
 st.title("AI Resume Examiner")
 st.markdown("Upload your resume and get AI-powered feedback to your needs!")
 
-##OPENAI_API_KEY = os.getenv("GITHUB_TOKEN")
+OPENAI_API_KEY = os.getenv("GITHUB_TOKEN")
 
 if not OPENAI_API_KEY:
     st.error("GITHUB_TOKEN is not set. Please configure your environment.")
